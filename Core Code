@@ -1,0 +1,32 @@
+# Rock, Paper, Scissors the Game, The Movie#
+from random import randint
+
+#Create  list of play options
+t = ["Rock", "Paper", "Scissors"]
+
+#assign a random play to the computer
+computer = t[randint(0,2)]
+
+#set player to False
+player = False
+
+while player == False:
+    #set player to true
+    player = input("Rock, Paper, Scissors?")
+    if player == computer:
+        print("Tie!")
+    elif player == "Rock":
+        if computer == "Paper":
+                print("You lose!", computer, "covers in an unfathomably large piece of milled wood", player)
+            else:
+                print("You win!", player, "smashes into atoms so small you can't hope to ever recover your minecraft save", computer)
+    elif player == "Paper":
+        if computer == "Scissors":
+            print("You lose!", computer, "cuts to bits so elegantly that you might think this is a simulation", player)
+        else:
+            print("You win!", player, "cut clean in half to the dismay of Steve Jobs", computer)
+    else:
+        print("That's not a valid play. Check your spelling and put the gun away!")
+    #player was set to True, but we want it to be false so the loop continues
+    player = False
+    computer = t[randint(0,2)]
