@@ -19,12 +19,12 @@ while player == False:
         if computer == "Paper":
                 print("You lose!", computer, "covers in an unfathomably large piece of milled wood", player)
             else:
-                print("You win!", player, "smashes into atoms so small you can't hope to ever recover your minecraft save", computer)
+                print("You win!", player, "smashes you're computer into atoms so small you can't hope to ever recover your minecraft save", computer)
     elif player == "Paper":
         if computer == "Scissors":
-            print("You lose!", computer, "cuts to bits so elegantly that you might think this is a simulation", player)
+            print("You lose!", computer, "cuts you to bits so elegantly that you might think this is a simulation", player)
         else:
-            print("You win!", player, "cut clean in half to the dismay of Steve Jobs", computer)
+            print("You win!", player, "cuts your hand clean in half to the dismay of the ", computer)
     else:
         print("That's not a valid play. Check your spelling and put the gun away!")
     #player was set to True, but we want it to be false so the loop continues
