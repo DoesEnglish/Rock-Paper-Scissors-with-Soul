@@ -24,15 +24,15 @@ while player == False:
     #If the player chooses Paper
     elif player == "Paper":
         if computer == "Scissors":
-            print("You lose!", computer, "cuts you to bits so elegantly that you might think this is a simulation", player)
-        else:
-            print("You win!", player, "cuts your hand clean in half to the dismay of the ", computer)
+                print("You lose!", computer, "cuts you to bits so elegantly that you might think this is a simulation", player)
+            else:
+                print("You win!", player, "cuts your hand clean in half to the dismay of the ", computer)
     #If the player chooses Scissors
     elif player == "Scissors":
         if computer == "Rock":
-            print("You lose!", computer, "smashes your hand into a million bits. This keeps you from coding garbage ever again. Thank god.", player)
-        else:
-            print("You win!", player, "SNIP SNIP I WANNA CUT IT OFF! SNNNNAAAARF!", computer)
+                print("You lose!", computer, "smashes your hand into a million bits. This keeps you from coding garbage ever again. Thank god.", player)
+            else:
+                print("You win!", player, "SNIP SNIP I WANNA CUT IT OFF! SNNNNAAAARF!", computer)
     #If the player chooses Snuffaluffagus
     else:
         print("That's not a valid play. Check your spelling and put the gun away!")
