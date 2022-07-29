@@ -25,6 +25,11 @@ while player == False:
             print("You lose!", computer, "cuts you to bits so elegantly that you might think this is a simulation", player)
         else:
             print("You win!", player, "cuts your hand clean in half to the dismay of the ", computer)
+    elif player == "Scissors":
+        if computer == "Rock":
+            print("You lose!", computer, "smashes your hand into a million bits. This keeps you from coding garbage ever again. Thank god.", player)
+        else:
+            print("You win!", player, "SNIP SNIP I WANNA CUT IT OFF! SNNNNAAAARF!", computer)
     else:
         print("That's not a valid play. Check your spelling and put the gun away!")
     #player was set to True, but we want it to be false so the loop continues
