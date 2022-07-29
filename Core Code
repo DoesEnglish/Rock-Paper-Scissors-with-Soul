@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors the Game, The Movie#
+# Rock, Paper, Scissors the Game, The Movie. Written with Python. 
 from random import randint
 
 #Create  list of play options
@@ -15,21 +15,25 @@ while player == False:
     player = input("Rock, Paper, Scissors?")
     if player == computer:
         print("Tie!")
+    #If the player chooses Rock
     elif player == "Rock":
         if computer == "Paper":
                 print("You lose!", computer, "covers in an unfathomably large piece of milled wood", player)
             else:
                 print("You win!", player, "smashes you're computer into atoms so small you can't hope to ever recover your minecraft save", computer)
+    #If the player chooses Paper
     elif player == "Paper":
         if computer == "Scissors":
             print("You lose!", computer, "cuts you to bits so elegantly that you might think this is a simulation", player)
         else:
             print("You win!", player, "cuts your hand clean in half to the dismay of the ", computer)
+    #If the player chooses Scissors
     elif player == "Scissors":
         if computer == "Rock":
             print("You lose!", computer, "smashes your hand into a million bits. This keeps you from coding garbage ever again. Thank god.", player)
         else:
             print("You win!", player, "SNIP SNIP I WANNA CUT IT OFF! SNNNNAAAARF!", computer)
+    #If the player chooses Snuffaluffagus
     else:
         print("That's not a valid play. Check your spelling and put the gun away!")
     #player was set to True, but we want it to be false so the loop continues
